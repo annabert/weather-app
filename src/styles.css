@@ -1,0 +1,112 @@
+body {
+  border: 1px solid rgb(218, 216, 216);
+  margin: 50px 80px;
+  font-family: Lato;
+}
+
+h1 {
+  font-size: 25px;
+  text-align: left;
+}
+
+.container {
+  max-width: 80%;
+  max-height: 20%;
+  margin-top: 50px;
+}
+
+.location {
+  padding: 16px;
+  margin: 16px;
+  position: relative;
+  left: 170px;
+  width: 70%;
+}
+
+.btn {
+  position: relative;
+  right: -12px;
+  bottom: 2px;
+}
+
+.current-location-button {
+  position: relative;
+  right: -12px;
+  bottom: 2px;
+}
+
+.current-city {
+  color: #5b6275;
+  font-size: 80px;
+  text-align: left;
+}
+
+.footer {
+  text-align: center;
+}
+
+.current-date,
+.current-time,
+.current-sky {
+  color: #939aa9;
+}
+
+.temperature {
+  text-align: right;
+  color: #ff7043;
+  font-size: 90px;
+}
+
+.metric {
+  text-align: right;
+  text-decoration: none;
+}
+
+.metric:hover {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.right {
+  color: #939aa9;
+  text-align: right;
+}
+
+.sun {
+  width: fit-content;
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  height: 30px;
+}
+
+.forecast {
+  text-align: center;
+  padding: 50px;
+}
+.maximum {
+  color: #ff7043;
+  font-weight: bold;
+}
+
+.minimum {
+  color: #42a4f5;
+}
+
+.my-name {
+  color: #e27b41;
+  text-decoration: none;
+}
+
+.my-name:hover {
+  color: #e27b41;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+}
+
+.units {
+  font-size: 16px;
+}
