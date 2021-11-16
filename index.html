@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather app</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="container">
+            <div class="row">
+              <form id="weather-form">
+                <input
+                  type="search"
+                  id="search"
+                  class="location"
+                  placeholder="What's your city?"
+                  autocomplete="off"
+                />
+                <button id="search-button" class="btn btn-primary">
+                  Take me there
+                </button>
+              </form>
+      </div>
+      <br />
+      <br />
+      <div class="row align-items-center">
+        <div class="col">
+          <br />
+          <h1 class="current-city"></h1>
+          <script src="src/index.js"></script>
+          <h4 class="current-date" id="current-date"></h4>
+          <h4 class="current-time" id="current-time"></h4>
+          <h4 class="current-sky" class="left">
+            
+
+          </h4>
+        </div>
+        <div class="col">
+          <img
+            class="sun"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/938/original/sun.gif?1631294251"
+            alt="sun"
+          />
+        </div>
+
+        <div class="col">
+            <h2 class="temperature">
+                <span id="temperature"></span>
+                <span class="units">
+                  <a href="#" class=metric id="celsius">°C </a>
+                  |<a href="#" class=metric id="fahrenheit"> °F</a>
+                </span>
+              </h2>
+          <h4 class="right">
+            <em>You say sunny, <br />I say picnic!</em>
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2 forecast">
+          Sat
+          <br />
+          <img
+            class="image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/942/original/sunny.png?1631294369"
+            alt="sunny"
+          />
+          <br />
+          <div class="maximum">28°</div>
+          <div class="minimum">13°</div>
+        </div>
+        <div class="col-2 forecast">
+          Sun
+          <br />
+          <img
+            class="image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/939/original/covered.png?1631294354"
+            alt="covered"
+          />
+          <br />
+          <div class="maximum">26°</div>
+          <div class="minimum">16°</div>
+        </div>
+        <div class="col-2 forecast">
+          Mon
+          <br />
+          <img
+            class="image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/940/original/cloudy.png?1631294361"
+            alt="cloudy"
+          />
+          <br />
+          <div class="maximum">27°</div>
+          <div class="minimum">16°</div>
+        </div>
+        <div class="col-2 forecast">
+          Tue
+          <br />
+          <img
+            class="image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/942/original/sunny.png?1631294369"
+            alt="sunny"
+          />
+          <br />
+          <div class="maximum">29°</div>
+
+          <div class="minimum">16°</div>
+        </div>
+        <div class="col-2 forecast">
+          Wed
+          <br />
+          <img
+            class="image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/941/original/rainy.png?1631294365"
+            alt="rainy"
+          />
+          <br />
+          <div class="maximum">29°</div>
+
+          <div class="minimum">16°</div>
+        </div>
+        <div class="col-2 forecast">
+          Thu
+          <br />
+          <img
+            class="image"
+            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/016/940/original/cloudy.png?1631294361"
+            alt="cloudy"
+          />
+          <br />
+          <div class="maximum">24°</div>
+
+          <div class="minimum">14°</div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <p class="footer">
+      This page was built by
+      <a
+        class="my-name"
+        href="https://www.linkedin.com/in/annaberthier/"
+        target="_blank"
+        >Anna Berthier</a
+      >
+    </p>
+  </body>
+</html>
