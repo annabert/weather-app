@@ -18,7 +18,7 @@ let days = [
 
   "Friday",
 
-  "Saturday"
+  "Saturday",
 ];
 
 let months = [
@@ -44,7 +44,7 @@ let months = [
 
   "November",
 
-  "December"
+  "December",
 ];
 
 let month = months[now.getMonth()];
@@ -115,4 +115,4 @@ fahrenheit.addEventListener("click", changeFahrenheit);
 let weatherForm = document.querySelector("#weather-form");
 weatherForm.addEventListener("submit", handleSubmit);
 
-searchCity("New York");
+searchCity("Paris");
