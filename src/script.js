@@ -67,9 +67,9 @@ dateDisplay.innerHTML = currentDate;
 
 function displayWeatherCondition(response) {
   document.querySelector(".current-city").innerHTML = response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(
+  document.querySelector("#temperature").innerHTML = `${Math.round(
     response.data.main.temp
-  );
+  )}º`;
 
   //current - sky;
   document.querySelector(".current-sky").innerHTML =
